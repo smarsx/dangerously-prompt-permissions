@@ -1,0 +1,58 @@
+[project]
+name = "dangerously-prompt-permissions"
+version = "0.1.0"
+description = "A manager system for Claude Code that intercepts and supervises tool actions using OpenRouter LLMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "smarsx" }
+]
+keywords = [
+    "claude",
+    "claude-code",
+    "openrouter",
+    "llm",
+    "agent",
+    "permissions",
+    "hooks",
+    "supervisor"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "httpx>=0.25.0",
+    "orjson>=3.9.0",
+    "rich>=13.0.0",
+    "claude-agent-sdk>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/smarsx/dangerously-prompt-permissions"
+Documentation = "https://github.com/smarsx/dangerously-prompt-permissions#readme"
+Repository = "https://github.com/smasrx/dangerously-prompt-permissions"
+Issues = "https://github.com/smarsx/dangerously-prompt-permissions/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dangerously_prompt_permissions"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/dangerously_prompt_permissions",
+    "/README.md",
+    "/LICENSE",
+]

@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include pyproject.toml
+recursive-include dangerously_prompt_permissions *.py
+include dangerously_prompt_permissions/py.typed
+recursive-include examples *.py
