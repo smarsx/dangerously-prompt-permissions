@@ -17,10 +17,7 @@ This library adds an automated permission layer to [Claude Code (Agent SDK)](htt
 ## Installation
 
 ```bash
-# From source
-git clone https://github.com/smarsx/dangerously-prompt-permissions.git
-cd dangerously-prompt-permissions
-pip install -e .
+pip install dangerously-prompt-permissions
 ```
 
 ## Quick Start
